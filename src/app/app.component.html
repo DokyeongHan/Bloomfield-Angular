@@ -1,0 +1,16 @@
+<!--The whole content below can be removed with the new code.-->
+<nav class = 'nav navbar-expand navbar-light bg-light'>
+  <a class='navbar-brand'>{{pageTitle}}</a>
+  <li><a class='nav-link' [routerLink]="['/welcome']">Home</a></li>
+  <li><a class='nav-link' [routerLink]="['/products']">Product List</a></li>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+    <div style="text-align:center" >
+        <pm-view-first></pm-view-first>
+    </div>
+</footer>
